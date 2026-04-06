@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --color-royal-blue: #002366;
+  --color-sky-blue: #87CEEB;
+  --color-soft-white: #F8F9FA;
+}
+
+@layer base {
+  body {
+    @apply bg-soft-white text-royal-blue font-sans antialiased;
+  }
+}
+
+.minimal-zen-spacing {
+  @apply py-24 md:py-32;
+}
